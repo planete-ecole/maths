@@ -1,7 +1,7 @@
 import React from 'react'
 import {Col} from 'reactstrap'
 
-function QuestionProgress () {
+function component () {
   return (
     <Col className='col-2 p-1'>
       <p className='d-flex'>avancement question</p>
@@ -9,4 +9,4 @@ function QuestionProgress () {
   )
 }
 
-export default QuestionProgress
+export default component

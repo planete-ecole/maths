@@ -1,7 +1,7 @@
 import React from 'react'
 import {Row, Col} from 'reactstrap'
 
-function DynamicTitle () {
+function component () {
   return (
     <Row>
       <Col className='col-3'>
@@ -11,4 +11,4 @@ function DynamicTitle () {
   )
 }
 
-export default DynamicTitle
+export default component

@@ -1,7 +1,7 @@
 import React from 'react'
 import {Row, Col} from 'reactstrap'
 
-function QuestionFrame() {
+function component() {
   return (
     <Row className='justify-content-center'>
       <Col className='d-flex p-1'>
@@ -14,4 +14,4 @@ function QuestionFrame() {
   )
 }
 
-export default QuestionFrame
+export default component

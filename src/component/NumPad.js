@@ -1,7 +1,7 @@
 import React from 'react'
 import {Col, Row, Button} from 'reactstrap'
 
-function NumPad () {
+function component () {
   return (
     <div>
       <Row>
@@ -28,4 +28,4 @@ function NumPad () {
   )
 }
 
-export default NumPad
+export default component
