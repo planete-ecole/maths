@@ -1,3 +1,1 @@
-import component from './component/'
-
-export default { component }
+export { DynamicTitle, NextQuestion, NumPad, QuestionFrame, QuestionProgress, Timer } from './component/'
