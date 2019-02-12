@@ -1,1 +1,5 @@
-export { DynamicTitle, NextQuestion, NumPad, QuestionFrame, QuestionProgress, Timer } from './component/'
+import student from './student/StudentComponent'
+
+const name = 'maths'
+
+export default { name, student }
