@@ -1,10 +1,9 @@
-import React, { Component } from 'react'
+import React from 'react'
 import { Container, Col, Row } from 'reactstrap'
-import { DynamicTitle, NextQuestion, NumPad, QuestionFrame, QuestionProgress, Timer } from './studentComponent'
+import { DynamicTitle, NextQuestion, NumPad, QuestionFrame, QuestionProgress, Timer } from './blocks'
 
-class StudentComponent extends Component {
-  render(
-  ) {
+class StudentComponent extends React.Component {
+  render() {
     return (
       <Container>
         <DynamicTitle />

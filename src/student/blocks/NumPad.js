@@ -2,13 +2,17 @@ import React from 'react'
 import {Col, Row, Button} from 'reactstrap'
 
 class component extends React.Component {
-  render () {
+  constructor(props) {
+    super(props)
+    this.state = {number: 0}
+  }
+  render() {
     return (
       <div>
         <Row>
-          <Col className='d-flex p-0'><Button className='flex-fill rounded-0'>7</Button></Col>
-          <Col className='d-flex p-0'><Button className='flex-fill rounded-0'>8</Button></Col>
-          <Col className='d-flex p-0'><Button className='flex-fill rounded-0'>9</Button></Col>
+          <Col className='d-flex p-0'><Button className='flex-fill rounded-0' onClick={() => this.setState(7)}>7</Button></Col>
+          <Col className='d-flex p-0'><Button className='flex-fill rounded-0' onClick={() => this.setState(8)}>8</Button></Col>
+          <Col className='d-flex p-0'><Button className='flex-fill rounded-0'>{this.state.number}</Button></Col>
         </Row>
         <Row>
           <Col className='d-flex p-0'><Button className='flex-fill rounded-0'>4</Button></Col>
@@ -30,4 +34,4 @@ class component extends React.Component {
   }
 }
 
-export default component
+export default { component }

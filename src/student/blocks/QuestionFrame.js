@@ -1,5 +1,6 @@
 import React from 'react'
 import {Row, Col} from 'reactstrap'
+/* import NumPad from './NumPad' */
 
 class component extends React.Component {
   render () {
