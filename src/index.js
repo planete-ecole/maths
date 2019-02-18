@@ -1,5 +1,5 @@
 import student from './student/StudentComponent'
 
-const name = 'MathsComponent'
+const name = 'maths'
 
 export default { name, student }

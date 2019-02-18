@@ -3,7 +3,7 @@ import Template from 'maths'
 
 export default class App extends React.Component {
   render() {
-    const StudentComponent = Template.StudentComponent
+    const StudentComponent = Template.student
 
     return (
       <StudentComponent />
