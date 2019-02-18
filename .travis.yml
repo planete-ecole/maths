@@ -1,4 +1,9 @@
 language: node_js
-node_js:
-  - 9
-  - 8
+node_js: 10
+
+jobs:
+  include:
+    - stage: unit tests
+      script: npm run test
+    - stage: check style
+      script: npm run lint
