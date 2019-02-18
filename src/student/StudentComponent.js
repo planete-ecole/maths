@@ -3,11 +3,11 @@ import { Container, Col, Row } from 'reactstrap'
 import { DynamicTitle, NextQuestion, NumPad, QuestionFrame, QuestionProgress, Timer } from './blocks'
 
 class StudentComponent extends React.Component {
-  constructor(props) {
+  constructor (props) {
     super(props)
     this.state = {number: 0}
   }
-  render() {
+  render () {
     return (
       <Container>
         <DynamicTitle />
