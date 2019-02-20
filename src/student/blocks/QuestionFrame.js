@@ -1,13 +1,13 @@
 import React from 'react'
 import {Row, Col} from 'reactstrap'
 
-const component = ({number}) => (
+const component = ({displayArray, firstNumber, mathSign, secondNumber}) => (
   <Row className='justify-content-center'>
     <Col className='d-flex p-1'>
-      <p className='d-flex flex-fill'>question en cours</p>
+      <p className='d-flex flex-fill'>{firstNumber + mathSign + secondNumber}</p>
     </Col>
     <Col className='d-flex p-1'>
-      <p className='d-flex flex-fill'>{number}</p>
+      <p className='d-flex flex-fill'>{displayArray}</p>
     </Col>
   </Row>
 )
