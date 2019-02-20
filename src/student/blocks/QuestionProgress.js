@@ -1,9 +1,9 @@
 import React from 'react'
-import {Col} from 'reactstrap'
+import { Col } from 'reactstrap'
 
 function component () {
   return (
-    <Col className='col-2 p-1'>
+    <Col className='col p-1'>
       <p className='d-flex'>avancement question</p>
     </Col>
   )

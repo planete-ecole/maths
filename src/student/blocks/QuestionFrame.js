@@ -1,5 +1,5 @@
 import React from 'react'
-import {Row, Col} from 'reactstrap'
+import { Row, Col } from 'reactstrap'
 
 const component = ({displayArray, firstNumber, mathSign, secondNumber}) => (
   <Row className='justify-content-center'>

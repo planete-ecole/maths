@@ -61,7 +61,7 @@ class StudentComponent extends React.Component {
       <Container>
         <DynamicTitle />
         <Row>
-          {/* affichage de la question en cours + réponse élève + pavé numérique + bouton valider */}
+          {/* display current question + student answer + numpad + validation button + timer */}
           <Col className='col-6 offset-3'>
             <QuestionFrame
               displayArray={this.state.displayArray}
@@ -74,13 +74,15 @@ class StudentComponent extends React.Component {
               float={this.pushFloat}
               del={this.Delete}
             />
+            <Row>
+              <Timer />
+            </Row>
             <NextQuestion 
               validation={this.validation}
             />
           </Col>
-          {/* Timer + avancement question */}
+          {/* question progress */}
           <QuestionProgress />
-          <Timer />
         </Row>
       </Container>
     )
