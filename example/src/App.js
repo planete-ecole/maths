@@ -1,13 +1,13 @@
-import React, { Component } from 'react'
+import React from 'react'
+import Template from 'maths'
 
-import ExampleComponent from 'maths'
+export default class App extends React.Component {
+  render() {
+    /* const StudentComponent = Template.student  */
+    const TeacherComponent = Template.teacher
 
-export default class App extends Component {
-  render () {
     return (
-      <div>
-        <ExampleComponent text='Modern React component module' />
-      </div>
+      <TeacherComponent />
     )
   }
 }

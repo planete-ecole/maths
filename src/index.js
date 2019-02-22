@@ -1,22 +1,6 @@
-import React, { Component } from 'react'
-import PropTypes from 'prop-types'
+import student from './student/StudentComponent'
+import teacher from './teacher/TeacherComponent'
 
-import styles from './styles.css'
+const name = 'maths'
 
-export default class ExampleComponent extends Component {
-  static propTypes = {
-    text: PropTypes.string
-  }
-
-  render() {
-    const {
-      text
-    } = this.props
-
-    return (
-      <div className={styles.test}>
-        Example Component: {text}
-      </div>
-    )
-  }
-}
+export default { name, student, teacher }
