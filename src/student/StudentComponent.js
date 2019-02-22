@@ -59,7 +59,11 @@ class StudentComponent extends React.Component {
   render () {
     return (
       <Container>
-        <DynamicTitle />
+        <Row>
+          <Col className='col-3'>
+            <DynamicTitle />
+          </Col>
+        </Row>
         <Row>
           {/* display current question + student answer + numpad + validation button + timer */}
           <Col className='col-6 offset-3'>
@@ -75,14 +79,22 @@ class StudentComponent extends React.Component {
               del={this.Delete}
             />
             <Row>
-              <Timer />
+              <Col className='p-1'>
+                <Timer />
+              </Col>
             </Row>
-            <NextQuestion 
-              validation={this.validation}
-            />
+            <Row className='justify-content-center'>
+              <Col className='d-flex col-10 p-3'>
+                <NextQuestion 
+                  validation={this.validation}
+                />
+              </Col>
+            </Row>
           </Col>
           {/* question progress */}
-          <QuestionProgress />
+          <Col className='col p-1'>
+            <QuestionProgress />
+          </Col>
         </Row>
       </Container>
     )
